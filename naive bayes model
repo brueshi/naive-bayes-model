@@ -1,0 +1,10 @@
+from sklearn.naive_bayes import GaussianNB
+
+# Create a Naive Bayes classifier object
+nb_classifier = GaussianNB()
+
+# Train the classifier on the training data
+nb_classifier.fit(X_train, y_train)
+
+# Predict the target variable for the test data
+y_pred = nb_classifier.predict(X_test)
